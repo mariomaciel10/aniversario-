@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+
+body
+{
+    background-color: #0a0e27;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    box-shadow: 1px 5px 8px #90ffdc;
+    border-radius: 20px;
+}
+
+.navbar ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+.navbar li
+{
+    list-style-type: none;
+    margin: 0 18px;
+    padding: 0;
+    animation-name: slideup;
+    animation-duration: 1s;
+}
+
+@keyframes slideup
+{
+    from{
+        margin: 0 30px;
+        opacity: 50%;
+         transform: scale(0.0);
+    }
+    to{
+        margin: 0 18px;
+        opacity: 100%;
+        transform: scale(1.0);
+    }
+}
+
+.pri
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    background-color: #274C77;
+    padding: 20px;
+    border: 5px solid #182f49;
+    border-radius: 10px;
+}
+
+.text
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    animation-name: slidein;
+    animation-duration: 1s;
+}
+
+@keyframes slidein
+{
+    from{
+        opacity: 0%;
+        margin-left: 80px;
+    }
+    to{
+        opacity: 100%;
+        margin-left: 0px;
+    }
+}
+
+.text h1
+{
+    color: white;
+    font-size: 70px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-style: normal;
+    margin: auto;
+}
+
+.imgs img
+{
+    width: 400px;
+    border: 3px solid #182f49;
+    border-radius: 10px;
+    animation-name: slideout;
+    animation-duration: 1s;
+}
+
+@keyframes slideout
+{
+    from{
+        opacity: 0%;
+        margin-right: 80px;
+    }
+    to{
+        opacity: 100%;
+        margin-right: 0px;
+    }
+}
+
+/**celular**/
+@media (min-width: 320px) and (max-width: 500px)
+{
+    .pri{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .text h1{
+        font-size: 30px;
+    }
+
+    .imgs img{
+        margin: auto;
+        width: 200px;
+    }
+}
+
+.historia
+{
+    color: white;
+    margin-top: 40px;
+    text-align: center;
+    border: 2px solid #E2DBBE;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 0 30px;
+    animation: up 50ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.historia h1
+{
+    background-color: #6096BA;
+    margin: 0 360px;
+    border-radius: 20px;
+    -webkit-text-stroke: 0.5px;
+    -webkit-text-stroke-color: black;
+    font-family: "Cal Sans", sans-serif;
+    animation: up 50ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+.historia p
+{
+    font-size: 25px;
+    line-height: 50px;
+    font-family: "Raleway", sans-serif;
+    animation: up 50ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0% cover 40%;
+}
+
+@keyframes up 
+{
+    from{
+        opacity: 25%;
+        transform: scale(0.0);
+    }
+    to{
+        opacity: 100%;
+        transform: scale(1.0);
+    }
+}
+
+/*celular*/
+@media (min-width: 320px) and (max-width: 500px)
+{
+    .historia{
+        margin-top: 30px;
+    }
+
+    .historia h1{
+        margin: 0px;
+    }
+
+    .historia p{
+        line-height: normal;
+        font-size: 15px;
+    }
+}
+
+.tempo
+{
+    text-align: center;
+    background-color: #90FFDC;
+    padding: auto;
+    margin-top: 30px;
+    margin: 0 400px;
+    border-radius: 3px;
+    box-shadow: 6px 8px 10px #272c4e;
+    animation: slid 50ms ease-in-out;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
+}
+
+.tempo h1
+{
+    font-family: "Raleway", sans-serif;
+}
+
+.tempo p
+{
+    font-size: 19px;
+    font-family: "Cal Sans", sans-serif;
+    margin-top: -20px;
+}
+
+@keyframes slid
+{
+    from{
+        opacity: 0;
+        transform: scale(1.5);
+        clip-path: inset(45% 20% 45% 20%);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.0);
+        clip-path: inset(0% 0% 0% 0%);
+    }
+}
+
+.Utilidades
+{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    margin: 0 40px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 7px 10px white;
+}
+
+.Utilidades h1
+{
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 50px;
+}
+
+.Utilidades p
+{
+    font-family: "Raleway", sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.Utilidades a
+{
+    text-decoration: none;
+    color: black;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 15px;
+}
+
+.Utilidades button
+{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    transition: transform 0.5s ease;
+}
+
+button:hover
+{
+    transform: scale(1.2);
+}
+
+/*celular dnv*/
+@media (min-width: 320px) and (max-width: 500px)
+{
+    .tempo{
+        margin: 0 30px;
+    }
+    .tempo h1{
+        font-size: 24px;
+    }
+    .tempo p{
+        margin-top: 5px;
+        font-size: 16px;
+    }
+}

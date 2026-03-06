@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15/05</title>
+    <link rel="stylesheet" href="csss/utilidades.css">
+    <script>
+        function toggleParagrafo() {
+      var paragrafo = document.getElementById("meuParagrafo");
+      if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+      } else {
+        paragrafo.style.display = "none";
+      }
+    }
+
+    function p() {
+      var paragrafo = document.getElementById("meuParagraf");
+      if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+      } else {
+        paragrafo.style.display = "none";
+      }
+    }
+
+    function e() {
+      var paragrafo = document.getElementById("meuParagra");
+      if (paragrafo.style.display === "none") {
+        paragrafo.style.display = "block";
+      } else {
+        paragrafo.style.display = "none";
+      }
+    }
+
+    const scr = () => {
+    window.scrollTo({
+   top: 0,
+   behavior: 'smooth'
+    })
+   }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="utilidades.html" target="_blank" rel="noopener noreferrer">Utilidades</a></li>
+                    <li><a href="fotinhas.html" target="_blank" rel="noopener noreferrer">Fotinhas</a></li>
+                    <li><a href="pag003.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="info">
+        <h1>para que serve essa aba?</h1>
+        <p>eu criei essa aba, com a função de "apoio", quando estiver triste ou algo do tipo <br>
+        aq vai ter alguma mensagem pra você, acho bem dificil tu lembrar de voltar aq ne,<br>
+        mas tbm vai algumas mensagens que eu mrm fiz, acho que deu pra enteder, <br>
+        enfim, aproveite </p>
+    </div>
+    <h2 id="o">Emoções</h2>
+    <div class="lp">
+        <div id="raiva">
+            <button onclick="toggleParagrafo()">raiva</button>
+            <p id="meuParagrafo">pra ser sincero <br> se o motivo da raiva for eu, me dsclp, vou melhorar <br>
+            mas, caso for outra coisa, como: tu ta fazendo algo e não deu certo, enfim, <br>
+            na vida é normal disso acontecer, fica com raiva pq n deu certo, <br>
+            as vezes precisamos da um passo pra tras pra da 3 pra frente, so tentar denovo q vai da certo <br>
+            afinal, de cabeça quente a gente n consegue fazer nada a não ser, chorar. </p>
+        </div>
+        <div id="triste">
+            <button onclick="p()">triste</button>
+            <p id="meuParagraf">n sei o motivo q tu ta triste <br> mas, tu tem eu :D (kkkkkk como se valesse algo)
+            se foi algo que eu fiz, pode me xingar a vontade, <br>pq eu sei o quão idiota eu posso ser,
+            me perdoe, mas se n foi isso, oq eu posso te dizer é, que coisas ruins podem acontecer <br>
+            mas não é pq uma rosa te espetou q vc vai arrancar o jardim inteiro, a vida continua <br>
+            as adversidades acontecem pra torna a gente melhores, <br>
+            se caso precisar desabafar, eu sempre estarei aq, eu espero q isso de alguma coisa plmns.</p>
+        </div>
+        <div id="feliz">
+            <button onclick="e()">feliz</button>
+            <p id="meuParagra">graças a Deus né, finalmente alguma coisa boa, <br>
+            se caso for alguma conquista, eu estou muito orgulhoso de você, vc se esforçou dms, vc é merece isso <br>
+            eu sei do seu pontecial, se vc tentar tu sempre vai consegui, meu parabens amor.</p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h2 id="o">Problemas</h2>
+    <div class="ls">
+        <div id="fam">
+            <h3>familiar</h3>
+            <img id="im" src="midia/uti/Captura de tela 2025-05-04 102248.png" alt="1m">
+        </div>
+        <div id="rela">
+            <h3>relacionamento</h3>
+            <img id="im" src="midia/uti/Captura de tela 2025-05-04 100702.png" alt="2m">
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="buu">
+      <button onclick="scr()">clique para rever</button>
+    </div>
+    <div class="te">
+      <h2>se caso o negocio tiver serio</h2>
+      <p><a href="https://w.app/zdbwde" target="_blank" rel="noopener noreferrer">clique aq</a></p>
+    </div>
+</body>
+</html>

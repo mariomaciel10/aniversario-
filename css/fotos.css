@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+
+img{
+    border: 2px solid white;
+    box-shadow: 3px 8px 10px black;
+}
+
+body
+{
+    background-color: #0a0e27;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    box-shadow: 1px 5px 8px #90ffdc;
+    border-radius: 20px;
+}
+
+.navbar ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a
+{
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    color: white;
+}
+
+.navbar li
+{
+    list-style-type: none;
+    margin: 0 18px;
+    padding: 0;
+    animation-name: slideup;
+    animation-duration: 1s;
+}
+
+@keyframes slideup
+{
+    from{
+        margin: 0 30px;
+        opacity: 50%;
+         transform: scale(0.0);
+    }
+    to{
+        margin: 0 18px;
+        opacity: 100%;
+        transform: scale(1.0);
+    }
+}
+
+.pri
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pri h1
+{
+    color: white;
+    font-size: 40px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+
+.foto
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+#suas
+{
+    color: white;
+    font-size: 40px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    text-align: center;
+}
+
+#edi
+{
+    width: 300px;
+}
+
+.tu
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#ao
+{
+    width: auto;
+    height: auto;
+}
+
+#ali
+{
+    width: 300px;
+    height: 212px;
+    align-self: center;
+}
+
+#alo
+{
+    width: 300px;
+    height: 400px;
+    align-self: center;
+}
+
+.eu
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#aop
+{
+    width: 300px;
+    align-self: center;
+}
+
+.btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn button
+{
+    background: none;
+    color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 20px;
+    transition: transform 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+button:hover
+{
+    transform: scale(1.2);
+    border: 1px solid gray;
+}
+
+/*celular*/
+@media (min-width: 320px) and (max-width: 500px)
+{
+    .pri
+    {
+        text-align: center;
+    }
+    .foto
+    {
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .tu
+    {
+        gap: 20px;
+    }
+    .eu
+    {
+        gap: 20px;
+    }
+    #ao
+{
+    width: 300px;
+    height: 400px;
+}
+}
